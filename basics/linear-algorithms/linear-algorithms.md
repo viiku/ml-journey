@@ -91,11 +91,11 @@ To find the best estimates for the coefficients to minimize the errors in predic
 B0 :- Bias 
 B1 :- Coefficent
 
-![alt text](image-2.png)
+![alt text](./images/image-2.png)
 
 The mean :
 
-![alt text](image-3.png)
+![alt text](./images/image-3.png)
 
 ### Making Predictions
 B0 :- Bias 
@@ -110,12 +110,12 @@ Let's start predicting y based on model,
 p is the predicted value (Put B0, B1 and X values in given model equation, we should get predicted values) and y is the actual value, i is the index for a specific instance, because we must calculate the error across all predicted values.
 
 
-![alt text](image-4.png)
+![alt text](./images/image-4.png)
 
 
 ### Shortcut to evaluate B1 
 
-![alt text](image-6.png)
+![alt text](./images/image-6.png)
 
 
 ## Linear Regression using Gradient Descent
