@@ -10,18 +10,18 @@ The two tasks of supervised learning:
     Training: machine learns f from labeled training data
     Test: machine predicts Y from unlabeled testing data
 
-### Linear Regression (ordinary least squares)
+### Linear Regression - OLS (ordinary least squares)
 Linear regression is a parametric method, which means it makes an assumption about the form of the function relating X and Y
 
-    Y = B0 + B1 x X + e 
+    Y = β0 + β1 x X + e 
 
-    B0 = Y-intercept or variance
-    B1 = Slope or Coefficient
+    β0 = Y-intercept or variance
+    β1 = Slope or Coefficient
 
 ***Goal here is to learn the model parameters (in this case, β0 and β1) that minimize error in the model’s predictions.***
 
 To find the best parameters:
-1. Define a cost function, or loss function, that measures how inaccurate our model’s predictions are.
+1. Define a cost function, or loss/error function, that measures how inaccurate our model’s predictions are.
 2. Find the parameters that minimize loss, i.e. make our model as accurate as possible.
 
 ![alt text](./images/image.png)
@@ -30,7 +30,7 @@ Where n stands for number of observations.
 
 ### Gradient Descent
 
-**As a cost function grows in complexity, finding a closed form solution with calculus is no longer feasible then an iterative approach called gradient descent, which allows us to minimize a complex loss function**
+**At a theoretical level, gradient descent is an algorithm that minimizes functions. Given a function defined by a set of parameters, gradient descent starts with an initial set of parameter values and iteratively moves toward a set of parameter values that minimize the function. This iterative minimization is achieved using calculus, taking steps in the negative direction of the function gradient.**
 
 ***The goal of gradient descent is to find the minimum of our model’s loss function by iteratively getting a better and better approximation of it.***
 
