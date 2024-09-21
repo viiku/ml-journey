@@ -24,7 +24,9 @@ To find the best parameters:
 1. Define a cost function, or loss/error function, that measures how inaccurate our model’s predictions are.
 2. Find the parameters that minimize loss, i.e. make our model as accurate as possible.
 
-![alt text](./images/image.png)
+This is how a Error function looks like....
+
+![alt text](./images/image-3.png)
 
 Where n stands for number of observations.
 
@@ -41,6 +43,40 @@ To begin gradient descent, we make some guess of the parameters β0 and β1 that
     if dz/dβ1 < 0 then increasing β1 is good, because it would reduce total cost
     If dz/dβ1 > 0, we will decrease β1. 
     If dz/dβ1 = 0 it’s zero, don’t change β1 because it means we've reached an optimum.
+
+Learn more about it here...
+
+1. [Gradient-descent-linear-regression](https://spin.atomicobject.comgradient-descent-linear-regression/)
+
+2. [Understanding-gradient-descent](https://eli.thegreenplace.net/2016/understanding-gradient-descent/)
+
+#### Let's understand it using an example
+Gradient descent is an optimization algorithm used to find the minimum of a function.
+Let's use a simple quadratic function as our example:
+    f(x) = x² + 2
+
+Our goal is to find the minimum of this function using gradient descent.
+
+let's walk through the gradient descent process:
+
+1. Choose a starting point:
+    Let's start at x = 4
+
+2. Calculate the gradient (derivative) of the function:
+    f'(x) = 2x
+
+3. Choose a learning rate:
+    Let's use a learning rate of 0.1
+
+4. Update the x value using the gradient and learning rate:
+    x_new = x_old - (learning rate * gradient)
+
+5. Repeat steps 2-4 until convergence or a set number of iterations
+
+#### Implecations of learning_rate
+1. A larger learning rate can lead to faster convergence but might overshoot the minimum.
+2. A smaller learning rate leads to slower but more stable convergence.
+3. More iterations generally lead to a more accurate result, but there are diminishing returns after a certain point.
 
 ### Overfitting
 **Learning a function that perfectly explains the training data that the model learned from, but doesn’t generalize well to unseen test data.**
