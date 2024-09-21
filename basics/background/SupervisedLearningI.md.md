@@ -26,7 +26,7 @@ To find the best parameters:
 
 This is how a Error function looks like....
 
-![alt text](./images/image-3.png)
+![alt text](./assets/image-3.png)
 
 Where n stands for number of observations.
 
@@ -93,7 +93,7 @@ Variance is how much your model's test error changes based on variation in the t
 
 As a model increases in complexity and it becomes more wiggly (flexible), its bias decreases (it does a good job of explaining the training data), but variance increases (it doesn't generalize as well). Ultimately, in order to have a good model, you need one with low bias and low variance.
 
-![alt text](./images/image-1.png)
+![alt text](./assets/image-1.png)
 
 **Combating overfitting**
 1. Use more training data. The more you have, the harder it is to overfit the data by learning too much from any single training example.
@@ -101,7 +101,7 @@ As a model increases in complexity and it becomes more wiggly (flexible), its bi
 2. Use regularization. Add in a penalty in the loss function for building a model that assigns too much explanatory power to any one feature or allows too many features to be taken into account.
 
 
-![alt text](./images/image-2.png)
+![alt text](./assets/image-2.png)
 
 The first piece of the sum above is our normal cost function.
 
