@@ -59,6 +59,7 @@ Given two vectors a and b:
 ![alt text](./assests/image-7.png)
 
 Geomatric Interpretaion:
+
 ![alt text](./assests/image-10.png)
 
 Properties:
@@ -125,7 +126,7 @@ When dealing with matrices, a common inner product is the Frobenius inner produc
 ![alt text](./assests/image-16.png)
 
 
-### Norm
+## Norm
 A norm is a function that assigns a non-negative length or size to a vector in a vector space. It is a way to measure the "magnitude" or "length" of a vector. Norms are widely used in linear algebra, functional analysis, optimization, and machine learning to quantify the size of vectors and matrices.
 
 ![alt text](./assests/image-17.png)
