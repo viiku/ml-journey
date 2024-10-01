@@ -94,4 +94,6 @@ A few examples of the problems SVMs can solve:
 **This algorithm is geomatrically motivated in nature rather than being driven by probabilistic thinking.**
 
 
+### Non-parametric models: 
 
+k-nearest neighbors, decision trees, and random forests. Introducing cross-validation, hyperparameter tuning, and ensemble models.
