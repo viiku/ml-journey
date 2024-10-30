@@ -1,38 +1,3 @@
-## supervised learning
-
-In supervised learning, the machine attempts to learn the relationship between data from scratch, by running labeled training data through a learning algorithm.
-
-The two tasks of supervised learning: 
-1. Regression
-    Predict a continuous numerical value (Y)
-
-    Y = f(X) + ε, where X = (x1, x2…xn)
-    
-    Training: machine learns f from labeled training data
-    Test: machine predicts Y from unlabeled testing data
-
-2. classification
-    Assign a label. Is this a picture of a cat or a dog?
-
-### Linear Regression - OLS (ordinary least squares)
-Linear regression is a parametric method, which means it makes an assumption about the form of the function relating X and Y
-
-    Y = β0 + β1 x X + e 
-
-    β0 = Y-intercept or variance
-    β1 = Slope or Coefficient
-
-***Goal here is to learn the model parameters (in this case, β0 and β1) that minimize error in the model’s predictions.***
-
-To find the best parameters:
-1. Define a cost function, or loss/error function, that measures how inaccurate our model’s predictions are.
-2. Find the parameters that minimize loss, i.e. make our model as accurate as possible.
-
-This is how a Error function looks like....
-
-![alt text](../assets/image-3.png)
-
-Where n stands for number of observations.
 
 ### Gradient Descent
 
@@ -40,12 +5,14 @@ Where n stands for number of observations.
 
 ***The goal of gradient descent is to find the minimum of our model’s loss function by iteratively getting a better and better approximation of it.***
 
-    f(β0,β1)=z
+    f(β0,β1) = z
 
 To begin gradient descent, we make some guess of the parameters β0 and β1 that minimize the function. Next, we find the partial derivatives of the loss function with respect to each beta parameter: [dz/dβ0, dz/dβ1]. A partial derivative indicates how much total loss is increased or decreased if you increase β0 or β1 by a very small amount.
 
     if dz/dβ1 < 0 then increasing β1 is good, because it would reduce total cost
+
     If dz/dβ1 > 0, we will decrease β1. 
+
     If dz/dβ1 = 0 it’s zero, don’t change β1 because it means we've reached an optimum.
 
 Learn more about it here...

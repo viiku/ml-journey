@@ -17,3 +17,12 @@ Increasing the bias will decrease the variance.
 Increasing the variance will decrease the bias.
 
 ***There is a trade-off at play between these two concerns and the algorithms you choose and the way you choose to configure them are finding different balances in this trade-off for your problem. In reality we cannot calculate the real bias and variance error terms because we do not know the actual underlying target function.***
+
+### Bias-Variance Tradeoff
+Bias is the amount of error introduced by approximating real-world phenomena with a simplified model.
+
+Variance is how much your model's test error changes based on variation in the training data. It reflects the model's sensitivity to the idiosyncrasies of the data set it was trained on.
+
+As a model increases in complexity and it becomes more wiggly (flexible), its bias decreases (it does a good job of explaining the training data), but variance increases (it doesn't generalize as well). Ultimately, in order to have a good model, you need one with low bias and low variance.
+
+![alt text](../assets/image-1.png)

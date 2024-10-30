@@ -29,3 +29,17 @@ There are two important techniques that you can use when evaluating machine lear
 The most popular resampling technique is k-fold cross validation. It allows you to train and test your model k-times on different subsets of training data and build up an estimate of the performance of a machine learning model on unseen data.
 
 A validation dataset is simply a subset of your training data that you hold back from your machine learning algorithms until the very end of your project. After you have selected and tuned your machine learning algorithms on your training dataset you can evaluate the learned models on the validation dataset to get a final objective idea of how the models might perform on unseen data.
+
+**Combating overfitting**
+1. Use more training data. The more you have, the harder it is to overfit the data by learning too much from any single training example.
+
+2. Use regularization. Add in a penalty in the loss function for building a model that assigns too much explanatory power to any one feature or allows too many features to be taken into account.
+
+
+![alt text](../assets/image-2.png)
+
+The first piece of the sum above is our normal cost function.
+
+The second piece is a regularization term that adds a penalty for large beta coefficients that give too much explanatory power to any specific feature.
+
+The lambda coefficient of the regularization term in the cost function is a hyperparameter: a general setting of your model that can be increased or decreased (i.e. tuned) in order to improve performance. A higher lambda value will more harshly penalize large beta coefficients that could lead to potential overfitting. To decide the best value of lambda, you’d use a method called cross-validation which involves holding out a portion of the training data during training, and then seeing how well your model explains the held-out portion.
