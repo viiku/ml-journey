@@ -1,0 +1,5 @@
+CHAPTER 1: FOUNDATIONS OF LINEAR ALGEBRA
+1.1 Vectors and Matrices
+1.2 Matrix Operations
+1.3 Vector Spaces and Linear Transformations
+1.4 Eigenvalues and Eigenvectors
